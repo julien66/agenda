@@ -1,0 +1,62 @@
+/**
+ * @file
+ * CSS file for the navbar
+ */
+navbar {
+  font-size: 12px;
+}
+
+#prev, #next {
+  cursor: pointer;
+  width : 20px;
+}
+
+#today, #day-bt, #week-bt, #month-bt, #prev, #next, #time-show {
+  float: left;
+  height: 20px;
+  border : 1px solid transparent
+}
+
+#today, #day-bt, #week-bt, #month-bt {
+  padding: 0px 4px;
+  padding-left : 21px;
+  cursor: pointer;
+}
+
+#day-bt {
+  background : url(../images/icons/cal-day.gif) no-repeat left center;
+}
+
+#week-bt {
+  background : url(../images/icons/cal-week.gif) no-repeat left center;
+}
+
+#month-bt {
+  background : url(../images/icons/cal-month.gif) no-repeat left center;
+}
+
+#today {
+  background : url(../images/icons/date.png) no-repeat left center;
+}
+
+#time-show {
+  line-height : 20px;
+}
+
+#day-bt.active, #week-bt.active, #month-bt.active,  #day-bt:hover, #week-bt:hover, #month-bt:hover, #prev:hover, #next:hover, #today:hover {
+  background-color: #EDF1D5;
+  border : 1px solid #466094;
+}
+
+#prev {
+  background : url(../images/icons/resultset_previous.png) no-repeat center;
+}
+
+#next {
+  background : url(../images/icons/resultset_next.png) no-repeat center center;
+}
+
+#group-agenda {
+  float : right;
+  margin-right : 20px;
+}

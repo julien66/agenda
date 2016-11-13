@@ -1,0 +1,14 @@
+<table id="month">
+  <tr>
+    {{#weekName}}
+      <th>{{name}}</th>
+    {{/weekName}}
+  </tr>
+  {{#weeks}}
+  <tr>
+    {{#days}}
+    <td><div class="day-title month-to-day" rel="{{rel}}">{{name}}</div><div class="container"></div></td>
+    {{/days}}
+  </tr>
+  {{/weeks}}
+</table>

@@ -1,0 +1,44 @@
+/**
+ * @file
+ * CSS file for the header
+ */
+header {
+  font-family : "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+  z-index: 10;
+}
+
+firstbar {
+  color : #15428b;
+  font-size : 12px;
+  font-weight : bold;
+  border : 1px solid #99bbe8;
+  background : url(../images/calendar/headbg.gif) repeat-x top;
+}
+
+navbar {
+  border-right : #99bbe8 1px solid;
+  border-left : #99bbe8 1px solid;
+  border-top : #99bbe8 0px solid;
+  border-bottom : #99bbe8 1px solid;
+  background : #ccc url(../images/calendar/tbg.gif) repeat-x 50% top;
+}
+
+#title {
+  background : url("../images/calendar/grid.png") no-repeat left;
+  padding-left : 20px;
+  margin-left: 10px;
+  padding-top : 2px;
+  float: left;
+}
+
+#login-bt {
+  float: right;
+  margin-right : 35px;
+  padding-left : 25px;
+  background : url("../images/log_in.png") no-repeat left;
+}
+
+#login-bt:hover {
+  text-decoration : underline;
+  cursor : pointer; 
+}

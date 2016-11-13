@@ -1,0 +1,38 @@
+<div class="form-content">
+  <form class="form" role="form">
+    <div class="form-group">
+      <label for="installation">Installation : </label>
+      <select name="installation">
+        {{#listInstall}}
+          {{#sel}} 
+          <option value="{{name}} ({{id}})" selected>{{name}}</option>
+          {{/sel}}
+          {{^sel}}
+          <option value="{{name}} ({{id}})">{{name}}</option>
+          {{/sel}}     
+       {{/listInstall}}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date-begin">Date de début : </label>
+      <input type="date-begin" class="form-control" id="date-begin" name="date-begin" placeholder="{{dateBegin}}" value="{{dateBegin}}">
+      <label for="date-end">Date de fin : </label>
+      <input type="date-end" class="form-control" id="date-end" name="date-end" placeholder="{{dateEnd}}" value="{{dateEnd}}">
+    </div>
+    <div class="form-group">
+      <label for="colonne-begin">Colonne de début : </label>
+      <input type="colonne-begin" class="form-control" id="colonne-begin" name="colonne-begin" placeholder="{{colonneBegin}}" value="{{colonneBegin}}">
+      <label for="colonne-end">Colonne de fin : </label>
+      <input type="colonne-end" class="form-control" id="colonne-end" name="colonne-end" placeholder="{{colonneEnd}}" value="{{colonneEnd}}">
+    </div>
+    <div class="form-group">
+    <div class="form-group">
+      <label for="groupe">Groupe : </label>
+      <select name="groupe">
+        {{#listGroup}}
+          <option value="{{name}} ({{id}})">{{name}}</option>
+        {{/listGroup}}
+      </select>
+    </div>
+  </form>
+</div>

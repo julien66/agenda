@@ -1,0 +1,26 @@
+<div id="table-head">
+  <table id="days">
+    <tr class="day-number">
+      <td class="hours"></td>
+      <td>{{date}}</td>
+    </tr>
+    <tr>
+      <td class="hours"></td>
+      <td class="full-day"></td>
+    </tr>
+  </table>
+</div>
+
+<table id="times">
+  {{#times}}
+    {{#start}}<tr class="start">{{/start}}
+    {{#middle}}<tr class="middle">{{/middle}}
+    {{#normal}}<tr>{{/normal}}
+    <td class="hours">{{#start}}{{hours}}{{/start}}{{^start}}&nbsp;{{/start}}</td>
+    {{#colonne}}
+    <td day="{{day}}" time="{{hours}}" colonne="{{num}}"></td>
+    {{/colonne}}
+    </tr>
+  {{/times}}
+</table>
+<div id="red-marker"></div>

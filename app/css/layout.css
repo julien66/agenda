@@ -1,0 +1,25 @@
+/**
+ * @file
+ * CSS File for the Calendar layout
+ */
+body {
+  margin : 0px;
+}
+
+header {
+  height : 58px;
+  width : 100%;
+  position : fixed;
+}
+
+firstbar, navbar {
+  height : 30px;
+  width : 100%;
+  display : block;
+  padding: 4px;
+}
+
+calendar {
+  display: block;
+  padding-top : 58px;
+}

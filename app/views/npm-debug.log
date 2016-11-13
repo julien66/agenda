@@ -1,0 +1,146 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'require-ejs' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'require-ejs', null ]
+7 verbose cache add spec require-ejs
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'require-ejs',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'require-ejs',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed require-ejs@*
+10 verbose addNamed "*" is a valid semver range for require-ejs
+11 silly addNameRange { name: 'require-ejs', range: '*', hasData: false }
+12 silly mapToRegistry name require-ejs
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://registry.npmjs.org/
+15 silly mapToRegistry uri http://registry.npmjs.org/require-ejs
+16 verbose addNameRange registry:http://registry.npmjs.org/require-ejs not in flight; fetching
+17 verbose request uri http://registry.npmjs.org/require-ejs
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 15:44:46
+20 verbose request id 854ca05a438d218d
+21 http request GET http://registry.npmjs.org/require-ejs
+22 http 200 http://registry.npmjs.org/require-ejs
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"13XZRHZG9K8H3QP6GNHLZFI18"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '9020',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Mon, 14 Sep 2015 13:44:40 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-ams4123-AMS',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1442238279.975834,VS0,VE388',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving require-ejs to /home/drupal/.npm/registry.npmjs.org/require-ejs/.cache.json
+25 silly addNameRange number 2 { name: 'require-ejs', range: '*', hasData: true }
+26 silly addNameRange versions [ 'require-ejs', [ '0.0.1', '0.0.2', '0.0.3' ] ]
+27 silly addNamed require-ejs@0.0.3
+28 verbose addNamed "0.0.3" is a plain semver version for require-ejs
+29 silly mapToRegistry name require-ejs
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry http://registry.npmjs.org/
+32 silly mapToRegistry uri http://registry.npmjs.org/require-ejs
+33 verbose addRemoteTarball http://registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'http://registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz',
+34 verbose addRemoteTarball   '5ae6d3896eb3fe13853b6a290b10916e776db278' ]
+35 info retry fetch attempt 1 at 15:44:47
+36 info attempt registry request try #1 at 15:44:47
+37 http fetch GET http://registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz
+38 http fetch 200 http://registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz
+39 silly fetchAndShaCheck shasum 5ae6d3896eb3fe13853b6a290b10916e776db278
+40 verbose addTmpTarball /tmp/npm-20588-306ed93f/registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for require-ejs@0.0.3
+42 silly cache afterAdd require-ejs@0.0.3
+43 verbose afterAdd /home/drupal/.npm/require-ejs/0.0.3/package/package.json not in flight; writing
+44 verbose afterAdd /home/drupal/.npm/require-ejs/0.0.3/package/package.json written
+45 silly install resolved [ { name: 'require-ejs',
+45 silly install resolved     version: '0.0.3',
+45 silly install resolved     description: 'Allows requiring EJS files as Node.js modules',
+45 silly install resolved     main: 'require-ejs.js',
+45 silly install resolved     directories: { test: 'test' },
+45 silly install resolved     dependencies: { ejs: '~0.8.3' },
+45 silly install resolved     devDependencies: {},
+45 silly install resolved     scripts: { test: 'node ./test/test' },
+45 silly install resolved     repository: { type: 'git', url: 'https://github.com/fshost/require-ejs' },
+45 silly install resolved     keywords: [ 'node.js', 'require', 'ejs', 'modules' ],
+45 silly install resolved     author: { name: 'Nathan Cartwright' },
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     readmeFilename: 'README.md',
+45 silly install resolved     readme: '﻿### require-ejs\r\n\r\nAllows requiring [EJS](https://github.com/visionmedia/ejs) template files as modules in Node.js.  Requiring any file with an .ejs extension returns a compiled EJS template function.\r\n\r\n#### installation\r\n\r\nnpm install require-ejs\r\n\r\n#### about\r\n\r\nAfter noticing that in the [original EJS](https://github.com/visionmedia/ejs) source there was code for registering an EJS file as a Node.js module, but that it did not work when I tried to use it, I forked and modified the EJS compiler source and wrote this extension.  I have sent a pull request to the original repo but until if/when it is accepted I\'m using this fork.\r\n',
+45 silly install resolved     _id: 'require-ejs@0.0.3',
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '5ae6d3896eb3fe13853b6a290b10916e776db278',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz' },
+45 silly install resolved     _from: 'require-ejs@*',
+45 silly install resolved     _npmVersion: '1.2.18',
+45 silly install resolved     _npmUser: { name: 'fshost', email: 'fshost@yahoo.com' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     _shasum: '5ae6d3896eb3fe13853b6a290b10916e776db278',
+45 silly install resolved     _resolved: 'http://registry.npmjs.org/require-ejs/-/require-ejs-0.0.3.tgz' } ]
+46 info install require-ejs@0.0.3 into /usr/local/lib
+47 info installOne require-ejs@0.0.3
+48 verbose installOne of require-ejs to /usr/local/lib not in flight; installing
+49 verbose lock using /home/drupal/.npm/_locks/require-ejs-cf0b81bcf8ba4b7c.lock for /usr/local/lib/node_modules/require-ejs
+50 silly install write writing require-ejs 0.0.3 to /usr/local/lib/node_modules/require-ejs
+51 verbose unbuild lib/node_modules/require-ejs
+52 silly gentlyRm /usr/local/lib/node_modules/require-ejs is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/require-ejs
+54 verbose tar unpack /home/drupal/.npm/require-ejs/0.0.3/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/require-ejs
+56 silly gentlyRm /usr/local/lib/node_modules/require-ejs is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/require-ejs
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /home/drupal/.npm/require-ejs/0.0.3/package.tgz
+60 verbose unlock done using /home/drupal/.npm/_locks/require-ejs-cf0b81bcf8ba4b7c.lock for /usr/local/lib/node_modules/require-ejs
+61 verbose fstream_path /usr/local/lib/node_modules/require-ejs
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/require-ejs'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+66 verbose cwd /var/www/sites/all/modules/creps/install/app/views
+67 error Linux 3.10.23-xxxx-std-ipv6-32
+68 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "require-ejs"
+69 error node v4.0.0
+70 error npm  v2.14.2
+71 error path /usr/local/lib/node_modules/require-ejs
+72 error code EACCES
+73 error errno -13
+74 error syscall mkdir
+75 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/require-ejs'
+75 error     at Error (native)
+75 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/require-ejs']
+75 error   errno: -13,
+75 error   code: 'EACCES',
+75 error   syscall: 'mkdir',
+75 error   path: '/usr/local/lib/node_modules/require-ejs',
+75 error   fstream_type: 'Directory',
+75 error   fstream_path: '/usr/local/lib/node_modules/require-ejs',
+75 error   fstream_class: 'DirWriter',
+75 error   fstream_stack:
+75 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+75 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+75 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+76 error Please try running this command again as root/Administrator.
+77 verbose exit [ -13, true ]
+78 verbose unbuild lib/node_modules/require-ejs
+79 silly gentlyRm /usr/local/lib/node_modules/require-ejs is being purged from base /usr/local
+80 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/require-ejs

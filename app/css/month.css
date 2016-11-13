@@ -1,0 +1,35 @@
+/**
+ * @file
+ * CSS file for the calendar.
+ */
+#month {
+  padding-left: 10px;
+}
+
+#month td {
+  vertical-align : top;
+}
+
+th {
+  text-align : center;
+  color : #15428b;
+  font-size: 13px;
+  text-transform: capitalize;
+  padding : 7px 0px; 
+}
+
+.day-title {
+  text-align : right;
+  padding-right : 5px;
+  padding-top : 2px;
+  color : #777;
+  background-color: #e8eef7;
+}
+
+.month-to-day {
+  cursor: pointer;
+}
+
+.month-to-day:hover {
+  text-decoration : underline;
+}

@@ -1,0 +1,119 @@
+/**
+ * @file
+ * CSS file for the week view.
+ */
+calendar, table#days {
+  background-color : #c3d9ff;
+}
+
+table {
+  table-layout : fixed;
+  border-collapse : collapse;
+  width : 100%;
+}
+
+#table-head {
+  padding: 5px 0px;
+  background-color: #000;
+  position: fixed;
+  height: 50px;
+  top: 59px;
+  width: 100%;
+  background-color : #c3d9ff;
+  z-index : 10;
+}
+
+table#days {
+  margin : 0px 0px 5px 1px;
+  text-align : center; 
+  position : fixed;
+  height: 40px;
+  top : 59px; 
+}
+
+table#times {
+  margin-top :49px;
+}
+
+#times td, #times tr {
+  height : 20px;
+}
+
+table#days tr td {
+  border : none;
+  background-color : transparent;
+}
+
+table#days tr td.full-day {
+  background-color: #e8eef7;
+  border-left : 3px solid #ddd; 
+}
+
+table#days td.hours {
+  background-color : transparent;
+}
+  
+tr.start {
+  border-top : 3px solid #ddd;
+}
+
+tr.middle {
+  border-top : 1px solid #ddd;
+}
+
+tr.day-number {
+  font-weight : bold;
+  font-size : 13px;
+  text-transform : capitalize;
+  color : #15428b;
+}
+
+tr td {
+  border-top : 1px dotted #ddd;
+  border-bottom : 1px dotted #ddd;
+  border-right : 1px dotted #ddd;
+  border-left : 1px dotted #ddd;
+  background-color : #FFF;
+}
+
+td.end {
+  border-right : 3px solid #ddd;
+}
+
+tr.start td.hours {
+  /*border-top : 1px solid #ddd;*/
+} 
+
+td.hours {
+  width: 50px;
+  border-left : 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top : none;
+  border-bottom : none;
+  color: #468;
+  text-align: right;
+  padding: 3px;
+  background-color: #e8eef7;
+  font-size : 14px;
+  user-select: none;
+  cursor : default;
+}
+
+td.today {
+  background-color : #ffc;
+}
+
+#red-marker {
+  position : absolute;
+  background-color : red;
+  opacity : 0.4;
+  z-index : 1;
+}
+
+.week-to-day {
+  cursor: pointer;
+}
+
+.week-to-day:hover {
+  text-decoration : underline;
+}
